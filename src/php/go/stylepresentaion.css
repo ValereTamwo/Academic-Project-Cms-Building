@@ -1,0 +1,274 @@
+body,
+html {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+    background: #f7fafb;
+}
+
+
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px; 
+  }
+
+
+
+
+
+
+.menu {
+    position: relative;
+    background-color: #FFF;
+    box-shadow:
+        0px 0.3px 0.6px rgba(0, 0, 0, 0.028),
+        0px 0.8px 1.8px rgba(0, 0, 0, 0.04),
+        0px 1.8px 4.2px rgba(0, 0, 0, 0.052),
+        0px 6px 14px rgba(0, 0, 0, 0.08);
+    display: flex;
+}
+
+.menu a {
+    position: relative;
+    padding: 1em;
+    text-decoration: none;
+    color: rgb(71, 85, 105);
+    transition: .3s;
+}
+
+.menu a:last-child {
+    margin-left: auto;
+}
+
+.indicator {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 4px;
+    background-color: #5396EB;
+    border-radius: 4px;
+    transform-origin: 0 0;
+    opacity: 0;
+}
+
+.menu a:hover {
+    color: #5396EB;
+}
+
+.menu a:hover .indicator {
+    opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .indicator {
+        top: 0;
+        right: auto;
+        width: 4px;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+#banner {
+	display: table;
+	width: 100%;
+	height: 150px;
+	background-color: #1d1e29;
+	color: rgb(150, 150, 167);
+	margin-top: 1px;
+}
+
+
+.conteneur {
+    
+    display: flex;
+    max-width: 1600px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: left;
+   
+  
+}
+
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  #banner {
+	display: table;
+	width: 100%;
+	height: 150px;
+	background-color: #79BFA1;
+	color: #fff;
+	margin-top: 1px;
+}
+
+
+
+/* REMOVE THIS, USE YOUR OWN  */
+
+.dummy_page {
+    height: 200px;
+    width: 100%;
+    background-color: #f0f0f0;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 60px 0px;
+  }
+  /* STYLES SPECIFIC TO FOOTER  */
+  .footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #070617;
+  }
+  .footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+  }
+  .footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255,255,255,0.2);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+  }
+  .footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+  }
+  .social ul li {
+    display: inline-block;
+    padding-right: 5px !important;
+  }
+  
+  .footer .col ul li:hover {
+    color: #ffffff;
+    transition: .1s;
+    -webkit-transition: .1s;
+    -moz-transition: .1s;
+  }
+  .clearfix {
+    clear: both;
+  }
+  @media only screen and (min-width: 1280px) {
+    .contain {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 1139px) {
+    .contain .social {
+      width: 1000px;
+      display: block;
+    }
+    .social h1 {
+      margin: 0px;
+    }
+  }
+  @media only screen and (max-width: 950px) {
+    .footer .col {
+      width: 33%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+      .footer .col {
+        width: 50%;
+      }
+      .footer .col h1 {
+        font-size: 14px;
+      }
+      .footer .col ul li {
+        font-size: 13px;
+      }
+  }
+  @media only screen and (max-width: 340px) {
+    .footer .col {
+      width: 100%;
+    }
+  }
+  

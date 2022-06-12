@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.438);
+    justify-content: center;
+    transform: translateY(50%);
+}
+.container{
+    width: 60vw;
+    height: 70vh;
+    background-color:#333;
+    border-radius: 20px;
+    transform: translateY(-50%);
+}
+.form{
+    height: 100%;
+    width: 50%;
+   
+    position: relative;
+    left: 25%;
+    transform: translateY(-100%); 
+}
+.form .inputt{
+    transform: translateY(50%);
+}
+.form .inputt input {
+    margin-bottom: 10px;
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 7 px;
+    color: whitesmoke;
+    background-color: transparent;
+    font-family: 'Poppins','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo{
+    height: 100%;
+    width: 50%;
+    background-color: aliceblue;
+    position: relative;
+    right: 25%;
+    border-radius: 20px;
+}
+.logo .image{
+  transform: translateY(-13%);
+  padding: 30px;
+}
+.logo  .image .imglogo{
+    transform: scale(0.7);
+}
+.container .logo .title{
+    width: 100%;
+    height: 20px;
+    
+}
+.container .logo .title label{
+    font-family: 'Poppins','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-size: 19px;
+    font-weight: bold;
+    color: #333;
+    z-index: 1;
+}
+.form .btn{ 
+    transform: translateY(200%);
+}
+.container span{
+        font-family: 'Poppins',
+        'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva,
+        Verdana,
+        sans-serif;
+        font-size: 14px;
+        color: blanchedalmond;
+        z-index: 1;
+       
+}
+.form .btn #validate{
+        font-family: 'Poppins',
+        'Lucida Sans',
+        'Lucida Sans Regular',
+        'Lucida Grande',
+        'Lucida Sans Unicode',
+        Geneva,
+        Verdana,
+        sans-serif;
+        
+        width: 100px;
+        height: 35px;
+        border: none;
+        text-align: center;
+        font-size: 17px;
+        border-radius: 10px;
+}
+ #abstract{
+     padding-top: 5px;
+    width: 100%;
+    height: 40px;
+    background-color: #333;
+    transform: translateY(120%);
+    border-radius: 10px;
+}
+#abstractA{
+    background-color:#333;
+    border: 2px solid #333;
+    padding-top: 5px;
+    width: 97%;
+    height: 40px;
+    transform: translateY(120%);
+    border-radius: 10px;
+}
+button {
+    font-family: 'Poppins' , 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100px;
+    height: 35px;
+    border: none;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 10px;
+}

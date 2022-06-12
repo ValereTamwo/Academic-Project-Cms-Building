@@ -1,0 +1,52 @@
+
+body{
+    background-color: azure;
+}
+.update ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 100px;
+}
+.update ul li button{
+  width: 120px;
+  height: 60px;
+  color: white;
+  background-color: rgb(131, 40, 216);
+  font-size: 17px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.container{
+    width: 500px;
+    height: 300px;
+    margin-top: 10%;
+    margin-left: 20%;
+    background-color: rgb(197, 247, 230);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 20px;
+}
+label{
+    font-size: 19px;
+    text-transform: uppercase;
+}
+
+textarea{
+    width: auto;
+    margin-left: 20px;
+    padding-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(229, 220, 236);
+}
+
+#button{
+width: 120px;
+  height: 60px;
+  color: white;
+  background-color: rgb(131, 40, 216);
+  font-size: 17px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
